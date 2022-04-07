@@ -1,0 +1,116 @@
+.slider-up {
+  z-index: 1;
+  figure {
+    margin: 0 0 0;
+  }
+  img {
+    border: none;
+    padding: 0;
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 360px;
+    height: 210px;
+  }
+}
+
+
+figure.shine {
+  background: @gunmetal;
+
+  img {
+    opacity: .6;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+
+  &:hover {
+    img {
+      opacity: 1;
+    }
+  }
+}
+
+.bg-theme-maroon {
+  background: @maroon-web;
+  color: @cultured;
+  a {
+    color: @cultured!important;
+    &:hover {
+      color: @platinum!important;
+      text-shadow: 0.8px 0.8px 2px @maximum-red;
+    }
+  }
+}
+.color-theme-maroon {
+  color: @maroon-web;
+}
+.bg-theme-maximum {
+  background: @maximum-red;
+}
+.color-theme-maximum {
+  color: @maximum-red;
+}
+
+.bg-theme-black {
+  background: @black;
+}
+.color-theme-black {
+  color: @black;
+}
+.bg-theme-platinum {
+  background: @platinum;
+}
+.color-theme-platinum {
+  color: @platinum;
+}
+.bg-theme-silver {
+  background: @sonic-silver;
+}
+.color-theme-silver {
+  color: @sonic-silver;
+}
+.bg-theme-cultured {
+  background: @cultured;
+  a {
+    color: @black;
+
+    &:hover {
+      color: @sonic-silver;
+      text-shadow: 0.1px 0.1px 0.5px @sonic-silver;
+    }
+  }
+}
+.color-theme-cultured {
+  color: @cultured !important;
+  &:hover {
+    color: @platinum!important;
+    text-shadow: 0.1px 0.1px 0.5px @sonic-silver;
+  }
+}
+.bg-theme-white {
+  background: @white;
+}
+.color-theme-white {
+  color: @white;
+}
+.bg-theme-bright-maroon {
+  background: @bright-maroon;
+}
+.color-theme-bright-maroon {
+  color: @bright-maroon;
+}
+.bg-theme-gunmetal {
+  background: @gunmetal;
+}
+.color-theme-gunmetal {
+  background: @gunmetal;
+}
+.font-pro {
+  font-family: 'Source Serif Pro', sans-serif;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.active, .router-link-active {
+  color: @maximum-red!important;
+}

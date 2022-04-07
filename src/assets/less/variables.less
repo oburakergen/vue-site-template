@@ -1,0 +1,108 @@
+
+/*
+Burası Sitenin ana tasarımını oluşturuyor
+ */
+
+
+/* SCSS HEX */
+@maroon-web: #7f0000ff;
+@bright-maroon: #b33951ff;
+@maximum-red: #db001bff;
+@cultured: #eeefefff;
+@white: #ffffffff;
+@platinum: #e8e9e9ff;
+@sonic-silver: #747575ff;
+@gunmetal: #23282eff;
+@black: #000000ff;
+
+/* SCSS HSL */
+@maroon-web: hsla(0, 100%, 25%, 1);
+@bright-maroon: hsla(348, 52%, 46%, 1);
+@maximum-red: hsla(353, 100%, 43%, 1);
+@cultured: hsla(180, 3%, 94%, 1);
+@white: hsla(0, 0%, 100%, 1);
+@platinum: hsla(180, 2%, 91%, 1);
+@sonic-silver: hsla(180, 0%, 46%, 1);
+@gunmetal: hsla(213, 14%, 16%, 1);
+@black: hsla(0, 0%, 0%, 1);
+
+/* SCSS RGB */
+@maroon-web: rgba(127, 0, 0, 1);
+@bright-maroon: rgba(179, 57, 81, 1);
+@maximum-red: rgba(219, 0, 27, 1);
+@cultured: rgba(238, 239, 239, 1);
+@white: rgba(255, 255, 255, 1);
+@platinum: rgba(232, 233, 233, 1);
+@sonic-silver: rgba(116, 117, 117, 1);
+@gunmetal: rgba(35, 40, 46, 1);
+@black: rgba(0, 0, 0, 1);
+
+/* SCSS Gradient */
+@gradient-top: linear-gradient(0deg, #7f0000ff, #b33951ff, #db001bff, #eeefefff, #ffffffff, #f4f4f4ff, #e8e9e9ff, #747575ff, #23282eff, #000000ff);
+@gradient-right: linear-gradient(90deg, #7f0000ff, #b33951ff, #db001bff, #eeefefff, #ffffffff, #f4f4f4ff, #e8e9e9ff, #747575ff, #23282eff, #000000ff);
+@gradient-bottom: linear-gradient(180deg, #7f0000ff, #b33951ff, #db001bff, #eeefefff, #ffffffff, #f4f4f4ff, #e8e9e9ff, #747575ff, #23282eff, #000000ff);
+@gradient-left: linear-gradient(270deg, #7f0000ff, #b33951ff, #db001bff, #eeefefff, #ffffffff, #f4f4f4ff, #e8e9e9ff, #747575ff, #23282eff, #000000ff);
+@gradient-top-right: linear-gradient(45deg, #7f0000ff, #b33951ff, #db001bff, #eeefefff, #ffffffff, #f4f4f4ff, #e8e9e9ff, #747575ff, #23282eff, #000000ff);
+@gradient-bottom-right: linear-gradient(135deg, #7f0000ff, #b33951ff, #db001bff, #eeefefff, #ffffffff, #f4f4f4ff, #e8e9e9ff, #747575ff, #23282eff, #000000ff);
+@gradient-top-left: linear-gradient(225deg, #7f0000ff, #b33951ff, #db001bff, #eeefefff, #ffffffff, #f4f4f4ff, #e8e9e9ff, #747575ff, #23282eff, #000000ff);
+@gradient-bottom-left: linear-gradient(315deg, #7f0000ff, #b33951ff, #db001bff, #eeefefff, #ffffffff, #f4f4f4ff, #e8e9e9ff, #747575ff, #23282eff, #000000ff);
+@gradient-radial: radial-gradient(#7f0000ff, #b33951ff, #db001bff, #eeefefff, #ffffffff, #f4f4f4ff, #e8e9e9ff, #747575ff, #23282eff, #000000ff);
+
+@black: #000;
+@gray-base: lighten(@black, 50%);
+@black-111:           	 lighten(@black, 6.5%);  // #111
+@black-222:              lighten(@black, 13.5%); // #222
+@black-333:              lighten(@black, 20%);   // #333
+@black-444:              lighten(@black, 25%);   // #444
+@black-555:              lighten(@black, 33.5%); // #555
+@black-666:              lighten(@black, 40%);   // #666
+@black-777:              lighten(@black, 46.5%); // #777
+@black-888:              lighten(@black, 50%);   // #888
+@black-999:           	 lighten(@black, 60%);   // #999999
+@white: #fff;
+@white-base: #fff;
+@gray-darkgray: @black-222;
+@gray-lighter:           lighten(@gray-base, 93.5%);
+@gray-darkgray:          #a9a9a9;
+@gray-bbb:          	 #bbb;
+@gray-silver:            #c0c0c0;
+@gray-lightgray:         #d3d3d3;
+@gray-gainsboro:         #dcdcdc;
+@gray-silver-light:      #F7F8FA;
+@white-f1:           	 #f1f1f1;
+@white-f2:           	 #f2f2f2;
+@white-f3:           	 #f3f3f3;
+@white-f4:           	 #f4f4f4;
+@white-f5:           	 #f5f5f5;
+@white-f6:           	 #f6f6f6;
+@white-f7:           	 #f7f7f7;
+@white-f8:           	 #f8f8f8;
+@white-f9:           	 #f9f9f9;
+@white-fa:           	 #fafafa;
+@white-fb:           	 #fbfbfb;
+@white-fc:           	 #fcfcfc;
+@white-fd:           	 #fdfdfd;
+@white-fe:           	 #fefefe;
+@gray-dimgray:           lighten(@black, 40%);   // #696969
+@gray-light:             lighten(@black, 46.7%); // #777
+@gray-base:           	 lighten(@black, 50%);   // #808080
+@font-opensans: 'Source Serif Pro', sans-serif;
+@font-raleway: 'Raleway', sans-serif;
+@body-font: @font-opensans;
+@heading-font: @font-opensans;
+@font-size-base: 14px;
+@font-size-large: 18px;
+@font-size-small: 12px;
+@font-size-h1: 3.40rem;
+@font-size-h2: 28px;
+@font-size-h3: 24px;
+@font-size-h4: 18px;
+@font-size-h5: 14px;
+@font-size-h6: 12px;
+@body-bg: @white;
+@text-color: @black-666;
+@link-color: @gray-base;
+@link-hover-color: darken(@link-color, 15%);
+@link-hover-decoration: none;
+@zindex-scrollToTop: 99999;
+

@@ -1,0 +1,34 @@
+.transition(@transition) {
+  -webkit-transition: @transition;
+  -o-transition: @transition;
+  transition: @transition;
+}
+.transform(@value) {
+  transform: @value;
+  -webkit-transform: @value;
+  -o-transform: @value;
+  -ms-transform: @value;
+  -moz-transform: @value;
+}
+.animation(@str) {
+  -webkit-animation: @str;
+  -moz-animation: @str;
+  -ms-animation: @str;
+  -o-animation: @str;
+  animation: @str;
+}
+
+.scale(@ratio) {
+  -webkit-transform: scale(@ratio);
+  -ms-transform: scale(@ratio); // IE9 only
+  -o-transform: scale(@ratio);
+  transform: scale(@ratio);
+}
+.preloader-setup-block() {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: @black-333;
+}
